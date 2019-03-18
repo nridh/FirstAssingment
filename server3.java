@@ -12,7 +12,7 @@ class Server
         
         try
         { 
-            server = new ServerSocket(port); 
+            server = new ServerSocket(3222); 
             System.out.println("Server started"); 
   
             System.out.println("Waiting for a client ..."); 
