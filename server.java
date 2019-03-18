@@ -7,7 +7,7 @@ public class server
     private ServerSocket    server   = null; 
     private DataInputStream in       = null; 
  
-    public Server(int port) 
+    public server(int port) 
     { 
         
         try
