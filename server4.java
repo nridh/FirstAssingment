@@ -20,7 +20,7 @@ class Server
             socket = server.accept(); 
             System.out.println("Client accepted"); 
   
-            in = new DataInputStream new BufferedInputStream(socket.getInputStream()); 
+            
            
             OutputStream ostream = sock.getOutputStream(); 
            PrintWriter pwrite = new PrintWriter(ostream, true);
