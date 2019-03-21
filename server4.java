@@ -23,9 +23,9 @@ class Server
             BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
             
            
-            OutputStream ostream = sock.getOutputStream(); 
+            OutputStream ostream = server.getOutputStream(); 
            PrintWriter pwrite = new PrintWriter(ostream, true);
-          InputStream istream = sock.getInputStream();
+          InputStream istream = server.getInputStream();
           BufferedReader receiveRead = new BufferedReader(new InputStreamReader(istream));
 
 
