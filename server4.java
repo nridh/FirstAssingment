@@ -20,6 +20,7 @@ class Server
             socket = server.accept(); 
             System.out.println("Client accepted"); 
   
+            BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
             
            
             OutputStream ostream = sock.getOutputStream(); 
