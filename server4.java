@@ -13,15 +13,15 @@ class Server
   
             System.out.println("Waiting for a client ..."); 
   
-            Socket server = sersock.accept(); 
+            Socket sock = sersock.accept(); 
             System.out.println("Client accepted"); 
   
             BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
             
            
-            OutputStream ostream = server.getOutputStream(); 
+            OutputStream ostream = sock.getOutputStream(); 
             PrintWriter pwrite = new PrintWriter(ostream, true);
-            InputStream istream = server.getInputStream();
+            InputStream istream = sock.getInputStream();
             BufferedReader receiveRead = new BufferedReader(new InputStreamReader(istream));
 
 
@@ -33,11 +33,11 @@ class Server
              {
                 if((receiveMessage = receiveRead.readLine()) != null)  
                   {
-                     System.out.println(receiveMessage);         
+                     System.out.println("From Client : " receiveMessage);         
                   }         
                  
                  sendMessage = keyRead.readLine(); 
-                 pwrite.println(sendMessage);             
+                 pwrite.println("To Client = " sendMessage);             
                  pwrite.flush();
              }
       
