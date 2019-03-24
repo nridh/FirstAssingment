@@ -17,7 +17,7 @@ int n;
 for(;;)
 {
 bzero(buff,sizeof(buff));
-printf("Enter the string : ");
+printf("To Server : ");
 n=0;
 while((buff[n++]=getchar())!='\n');
 write(sockfd,buff,sizeof(buff));
