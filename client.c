@@ -8,7 +8,7 @@
 #include<unistd.h>
 #include<arpa/inet.h>
 #define MAX 80
-#define PORT 3222
+#define PORT 3333
 #define SA struct sockaddr
 void func(int sockfd)
 {
