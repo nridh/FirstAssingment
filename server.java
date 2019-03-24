@@ -34,7 +34,7 @@ class Server
                   }         
               
               sendMessage = keyRead.readLine(); 
-              System.out.println("To Client = " pwrite.println(sendMessage));             
+              System.out.println("To Client = "+ pwrite.println(sendMessage));             
               pwrite.flush();
                  
                 
