@@ -46,7 +46,7 @@ else
 printf("Socket successfully created..\n");
 bzero(&servaddr,sizeof(servaddr));
 servaddr.sin_family=AF_INET;
-servaddr.sin_addr.s_addr=inet_addr("192.168.109.129");
+servaddr.sin_addr.s_addr=inet_addr("192.168.109.142");
 servaddr.sin_port=htons(PORT);
 if(connect(sockfd,(SA *)&servaddr,sizeof(servaddr))!=0)
 {
