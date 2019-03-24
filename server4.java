@@ -33,11 +33,11 @@ class Server
              {
                 if((receiveMessage = receiveRead.readLine()) != null)  
                   {
-                     System.out.println("From Client : " receiveMessage);         
+                     System.out.println("From Client : " + receiveMessage);         
                   }         
                  
                  sendMessage = keyRead.readLine(); 
-                 pwrite.println("To Client = " sendMessage);             
+                 pwrite.println("To Client = " + sendMessage);             
                  pwrite.flush();
              }
       
