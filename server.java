@@ -37,7 +37,7 @@ class Server
               {
               System.out.println("To Client = "+sendMessage);              
               }
-              pwrite.println(sendMessage));
+              pwrite.println(sendMessage);
               pwrite.flush();
                  
                 
