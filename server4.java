@@ -8,10 +8,8 @@ class Server
     { 
         
         
-            ServerSocket sersock = new ServerSocket(3222); 
+            ServerSocket sersock = new ServerSocket(3333); 
             System.out.println("    ~Server is ready ~"); 
-  
-  
             Socket sock = sersock.accept(); 
             
   
