@@ -4,13 +4,12 @@ import java.io.*;
 class Server 
 {
    
-    public Server(int port) 
+    public static void main(String args[]) throws Exception
     { 
         
-        try
-        { 
+        
             server = new ServerSocket(3222); 
-            System.out.println("Server ready for chatting = "); 
+            System.out.println("Server ready for chatting ~"); 
   
             System.out.println("Waiting for a client ..."); 
   
@@ -33,23 +32,14 @@ class Server
             while (true) 
              {
                 if((receiveMessage = receiveRead.readLine()) != null)  
-               {
-                  System.out.println(receiveMessage);         
-               }         
-                sendMessage = keyRead.readLine(); 
-                pwrite.println(sendMessage);             
-                pwrite.flush();
-              }              
-           } 
-        
-      catch(IOException i) 
-        { 
-            System.out.println(i); 
-        } 
-    } 
-  
-    public static void main(String args[]) throws Exception
-    { 
-        Server server = new Server(3222); 
-    } 
+                  {
+                     System.out.println(receiveMessage);         
+                  }         
+                 
+                 sendMessage = keyRead.readLine(); 
+                 pwrite.println(sendMessage);             
+                 pwrite.flush();
+             }
+      
+      } 
 } 
