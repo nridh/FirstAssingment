@@ -8,7 +8,7 @@ class Server
     { 
         
         
-            ServerSocket server = new ServerSocket(3222); 
+            ServerSocket sersock = new ServerSocket(3222); 
             System.out.println("    ~Server is ready ~"); 
   
             System.out.println("Waiting for a client ..."); 
